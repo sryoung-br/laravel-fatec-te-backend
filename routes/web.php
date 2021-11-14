@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
     return response()->json(['servidor' => 'Iniciado com sucesso!', 'autor' => 'Marcos'], 200);
-})->middleware('allow');
+});
 
 Route::get('token', function(){
     $token = csrf_token();
